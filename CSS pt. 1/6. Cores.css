@@ -1,0 +1,25 @@
+/* RGB
+R: red
+G: green
+B: blue
+
+padrão rgb(255,0,0)
+Sempre na sequência: vermelho, verde e azul
+255 é o valor máximo
+*/
+
+h1{
+    background: rgb(200,67,89);
+}
+
+/* HEXADECIMAL
+0,1,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+padrão #FF00FF
+2 casas decimais para cada cor
+Sempre na sequência: vermelho, verde e azul
+FF é o valor máximo com 2 dígitos no sistema hexadecimal
+*/
+p{
+    color: #00FFFF
+}

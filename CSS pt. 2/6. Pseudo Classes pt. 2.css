@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :first-child → Primeiro filho. Ex: primeira li de uma ul / primeiro span de uma div */
+
+li:first-child{
+    color: red;
+}
+
+/* :first-of-type → Primeiro elemento do seu tipo entre os filhos de seu elemento pai */
+
+span:first-of-type{
+    color:chartreuse;
+}
+
+p:first-of-type{
+    color:coral;
+}
+
+/* :last-child → Último filho*/
+
+li:last-child{
+    color: chartreuse
+}
+
+/* :last-of-type → Último elemento do seu tipo entre os filhos do seu elemento pai */
+span:last-of-type{
+    color:cyan;
+}
+
+/* :not( ) → Estiliza os elementos, exceto o que está dentro dos ( ) */
+
+div:not(p){
+    color:darkmagenta;
+}
+
+/* :nth-child() → Seleciona o elemento baseado em sua posição. Ex: :nth-child(3) */
+
+li:nth-child(3){
+    color:deeppink
+}
+
+/* :nth-last-child() → Seleciona o elemento baseado em sua posição, contando de trás pra frente */
+
+li:nth-last-child(2){
+    color:goldenrod;
+}

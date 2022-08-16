@@ -1,0 +1,76 @@
+/* 
+Propriedades:
+
+- top:
+- bottom: 
+- right: 
+- left:
+
+* position relative: posição relativa à posição inicial dele; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dad{
+    height: 350px;
+    width: 350px;
+    background-color: #FF1396 ;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.div-son{
+    height: 150px;
+    width: 150px;
+    background-color: #FFFF00 ;
+    position: relative;
+    top: 30px;
+    left: 45px;
+}
+
+/* * position absolute: posição absoluta (fixa) a algum elemento ou à página
+                     - Se não tiver pai / pai for static: posiciona referente à página; */
+
+.div-dad2{
+    height: 350px;
+    width: 350px;
+    background-color: #FF9956 ;
+}
+
+.div-son2{
+    height: 150px;
+    width: 150px;
+    background-color: #00FF98 ;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
+
+
+/* * position absolute: posição absoluta (fixa) a algum elemento ou à página
+        - Se o pai não for static: posiciona referente ao pai;  */
+
+.div-dad3{
+    height: 350px;
+    width: 350px;
+    background-color: #FF0530 ;
+    position: sticky;
+    top: 200px;
+    left: 300px;
+}
+
+.div-son3{
+    height: 150px;
+    width: 150px;
+    background-color: #F15008 ;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+}

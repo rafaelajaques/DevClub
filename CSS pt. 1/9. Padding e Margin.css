@@ -1,0 +1,40 @@
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: #FF1493;
+    padding: 50px;
+}
+
+.box-2{
+    height: 50px;
+    width: 50px;
+    background-color: #9932CC;
+    margin: 50px;
+}
+
+.box-3{
+    height: 50px;
+    width: 50px;
+    background-color: #7366ee;
+    margin-top: 20x;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 25px;
+}
+
+/* ATALHO DO RELÓGIO
+
+margin: 10px 20px 10px 30px;
+        12h  15h  18h  21h
+       top right bottom left */
+
+
+/* Ourto atalho para quando quero o mesmo valor na direita e esquerda
+
+margin: 10px 20px 10px
+       top  R and L  bottom */
+
+/* Atalho quando quero deixar o mesmo valor em cima / embaixo e esquerda / direita
+margin: 10px 20px
+        C/B e D/E */
+

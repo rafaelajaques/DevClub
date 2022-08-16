@@ -1,0 +1,21 @@
+h1{
+    color: rgb(255,50,99);
+    font-size: 64px;
+    font-weight: bolder;
+    font-family: 'Square Peg', cursive;
+    font-style: italic; /* normal ou itálico, por exemplo */
+    text-shadow: 10px 10px 10px #FF0000 /* sombreamento. Indicar sempre tamanho da sombra na horizontal, na vertical, quão esfumado ou sólido e a cor */
+}
+
+p{
+    color: #FF9955; /* cor da fonte */
+    font-size: 25px; /* tamanho da fonte */
+    font-weight: light; /* grossura da fonte */
+    font-family: 'Square Peg', cursive; /* familía da fonte (Google Fonts) */
+    line-height: 75px; /* espaçamento entre linhas */
+    letter-spacing: 10px; /* espaçamento entre letras */
+    word-spacing: 12px; /* espaçamento entre palavras */
+    text-align: justify; /* alinhamento do texto */
+    text-transform: uppercase; /* deixar tudo maiúsculo, minúsculo, só a primeira de cada palavra em maiúsculo */
+    text-decoration: underline; /*colocar linha abaixo ou acima, por exemplo*/
+}

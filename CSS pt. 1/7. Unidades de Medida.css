@@ -1,0 +1,79 @@
+/* Unidades de Medida
+
+-> ABSOLUTAS
+px (pixels): 1/100 de polegada ou 0,254mm
+
+Também pode-se usar polegada ou centímetro, mas não é comum.
+
+*/
+.vo{
+    
+}
+
+.pai{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.filho{
+    width: 50%;
+    height: 50%;
+    background: blue;
+}
+
+/* As medidas relativas são boas caso você queira que algo se modifique proporcionalemnte em relação a outro elemento, por exemplo */
+
+.vovo{
+    
+}
+
+.papai{
+    width: 50vw;
+    height: 50vh;
+    background: pink;
+}
+
+.filhinho{
+    width: 50%;
+    height: 50%;
+    background: gray;
+}
+
+.papito{
+    width: 50vw;
+    height: 50vh;
+    background: #0000FF;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.bebe{
+    width: 50%;
+    height: 50%;
+    background: #FF0000;
+    color: #FFFFFF;
+    font-size: 0.5em
+}
+
+.grand{
+    width: 100x;
+    height: 300px;
+    background: orange;
+    font-size: 50px;
+    color: #0000FF;
+}
+.dad{
+    width: 50px;
+    height: 150px;
+    background: green;
+    font-size: 25px;
+    color: #000000;
+}
+.son{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: blueviolet;
+    font-size: 0.5rem;
+    color: #FF0000;
+}

@@ -1,0 +1,26 @@
+#titulo{
+    color: crimson;
+    font-size: 50px;
+    background-color:aqua;
+}
+
+#paragrafo{
+    color: coral;
+    font-size: 25px;
+}
+
+#botao{
+    background-color:darkorange ;
+}
+
+#botao2{
+    background-color: deeppink;
+}
+
+.texto{
+    color: chartreuse;
+    background-color: indigo;
+}
+/* Se for separar os arquivos HTML e CSS, é importante sinalizar no HTMl de onde virão os estilos.
+Na tag <head> informar: 
+<link rel="stylesheet" href="arquivo.css"> */
