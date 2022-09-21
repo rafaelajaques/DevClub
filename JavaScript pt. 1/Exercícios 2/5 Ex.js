@@ -57,6 +57,7 @@ const personFive ={
 
 }
 
+
 if(personOne.nacionalidade === "brasileira" && personOne.idade >= 18){
     console.log('APROVADO')
 }
@@ -92,4 +93,5 @@ if(personFive.nacionalidade === "brasileira" && personFive.idade >= 18){
 else{
     console.log('REPROVADO')
 }
+
 
