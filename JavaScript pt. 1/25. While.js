@@ -15,5 +15,10 @@ while(i < 20){
     i+=2
 }
 
+let a = 239853904859438
+while(a > 20){
+    console.log(a)
+    a/=40
+}
 
 
