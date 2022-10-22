@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: 10px;
+    border: 1px solid #9758A6;
+    width: 300px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}  
+
+/* Junta os itens e depois alinha. 
+Disferente do align items, que usa o espaço total e só alinha
+
+Importante ter os valores de height e width definidos
+e usar o flex-wrap: wrap.
+
+Aplicado no container
+*/
+
+.block{
+    width: 100px;
+    height: 100px;
+    background:#CDD728;
+    border: 5px solid #9758A6;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}

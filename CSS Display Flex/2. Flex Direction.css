@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: 10px;
+    border: 1px solid #9758A6;
+    display: flex;
+    flex-direction: column-reverse;
+
+    /* row - row reverse - column - column reverse 
+    
+    Aplicado no container */
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    background:#CDD728;
+    border: 5px solid #9758A6;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}

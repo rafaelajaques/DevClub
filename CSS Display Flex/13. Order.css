@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: 10px;
+    border: 1px solid #9758A6;
+    width: 800px;
+    height: 800px;
+    display: flex;
+}  
+
+/* 
+Usado para determinar a ordem dos elementos.
+
+Aplicado nos itens
+*/
+
+.first-block{
+    width: 100px;
+    height: 100px;
+    background:#CDD728;
+    border: 5px solid #9758A6;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    order: 3;
+}
+
+.seccond-block{
+    width: 100px;
+    height: 100px;
+    background:#CDD728;
+    border: 5px solid #9758A6;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    order: 1;
+}
+
+.third-block{
+    width: 100px;
+    height: 100px;
+    background:#CDD728;
+    border: 5px solid #9758A6;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    order: 2;
+}
+
