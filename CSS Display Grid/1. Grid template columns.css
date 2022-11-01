@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+}
+
+/*
+Aplicado no container 
+
+Deixa os itens em colunas
+
+grid-template-columns: 100px 100px 100px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);
+grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+grid-template-columns: repeat(auto-fit minmax(100px auto));
+
+*/
+
+.space{
+    background-color:white;
+    font-size: 30px;
+}
+
+.one{
+    background-color: #333453;
+}
+
+.two{
+background-color: #259d11;
+}
+
+.three{
+    background-color: #800534;
+}
+
+.four{
+    background-color: #0c8f9b;
+}
+
+.five{
+    background-color: #FF0a0a
+}
+
+.six{
+    background-color: #fbfc00;
+}
+
+.seven{
+    background-color: #fc00ef;
+}
+
+.eight{
+    background-color: #007cfc;
+}
+
+.nine{
+    background-color: #fc9700;
+}

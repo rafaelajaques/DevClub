@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*
+Aplicado no item
+
+Determina onde um item começa e onde termina;
+
+*/
+
+.space{
+    background-color:white;
+    font-size: 30px;
+}
+
+.one{
+    background-color: #333453;
+}
+
+.two{
+background-color: #259d11;
+}
+
+.three{
+    background-color: #800534;
+    grid-column: 2/4;
+}
+
+.four{
+    background-color: #0c8f9b;
+}
+
+.five{
+    background-color: #FF0a0a
+}
+
+.six{
+    background-color: #fbfc00;
+}
+
+.seven{
+    background-color: #fc00ef;
+}
+
+.eight{
+    background-color: #007cfc;
+}
+
+.nine{
+    background-color: #fc9700;
+}

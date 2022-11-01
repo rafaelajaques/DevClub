@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+
+/*
+Aplicado no container 
+
+Deixa o espaçamento entre linhas e colunas
+
+grid-row-gap: 10px;
+grid-column-gap: 10px;
+grid-gap: 10px 10px;
+
+*/
+
+.space{
+    background-color:white;
+    font-size: 30px;
+}
+
+.one{
+    background-color: #333453;
+}
+
+.two{
+background-color: #259d11;
+}
+
+.three{
+    background-color: #800534;
+}
+
+.four{
+    background-color: #0c8f9b;
+}
+
+.five{
+    background-color: #FF0a0a
+}
+
+.six{
+    background-color: #fbfc00;
+}
+
+.seven{
+    background-color: #fc00ef;
+}
+
+.eight{
+    background-color: #007cfc;
+}
+
+.nine{
+    background-color: #fc9700;
+}
