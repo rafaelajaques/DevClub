@@ -219,16 +219,28 @@ footer {
     display: grid;
     grid-template-rows: 40px 40px 40px 40px 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
 a {
     color: #949393;
+    text-decoration: none;
+    position: relative;
+}
+/* 
+.foot:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: #949393;
 }
 
-a:hover {
-    text-decoration: #949393;
-}
+.foot:hover:after {
+    width: 70%;
+} */
+
 
 .end {
     height: 60px;
