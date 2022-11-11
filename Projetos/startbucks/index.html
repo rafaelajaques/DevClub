@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks Coffee</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+
+    <img class="logo" src="./img/logo.png" alt="logo da Startbucks">
+    <main class="container">
+        <section class="text-container">
+            <h2>
+                It's not just Coffee <br>
+                It's <span>Startbucks</span>
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima maiores laudantium officia
+                molestiae
+                exercitationem est ab velit provident id voluptatibus ipsam soluta nisi perferendis non rem, architecto
+                fuga
+                modi!
+            </p>
+            <button>Learn More</button>
+        </section>
+        <section class="img-container">
+            <img class="starbucks" src="./img/img1.png">
+        </section>
+    </main>
+    <section class="menu-container">
+        <img class="btn-menu" src="./img/thumb1.png" id="thumb1"
+            onclick="ChangeImage('./img/img1.png'); changeColor('#017143')">
+        <img class="btn-menu" src="./img/thumb2.png" id="thumb2"
+            onclick="ChangeImage('./img/img2.png'); changeColor('#EB7495')">
+        <img class="btn-menu" src="./img/thumb3.png" id="thumb3"
+            onclick="ChangeImage('./img/img3.png'); changeColor('#D752B1')">
+
+        <script src="./script.js"></script>
+    </section>
+</body>
+
+</html>
