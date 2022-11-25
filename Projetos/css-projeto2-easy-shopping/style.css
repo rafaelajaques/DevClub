@@ -112,7 +112,7 @@ header {
         display: block;
         width: 100%;
         position: static;
-        padding:40px;
+        padding: 40px;
     }
 
     img {
@@ -124,7 +124,7 @@ header {
         font-size: 36px;
         line-height: 52px;
         text-align: center;
-        margin-top:58px;
+        margin-top: 58px;
         width: auto;
     }
 
@@ -132,16 +132,16 @@ header {
         font-size: 14px;
         line-height: 24px;
         text-align: center;
-        margin:15px 40px;
-        width:auto;
+        margin: 15px 40px;
+        width: auto;
     }
 
-    button{
-        display:block;
-        margin:auto;
+    button {
+        display: block;
+        margin: auto;
     }
 
-    a{
-        display:none;
+    a {
+        display: none;
     }
 }
