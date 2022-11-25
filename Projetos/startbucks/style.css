@@ -24,36 +24,39 @@ body {
 .img-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: 100px;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+
 }
 
 .menu-container {
     display: flex;
     justify-content: center;
     gap: 15px;
+    /* border: 1px solid red; */
+
 }
 
 .logo {
     width: 80px;
-    ;
 }
 
 h2 {
     margin-top: 0px;
     color: #333;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 500;
     /* border: 1px solid cyan; */
 }
 
 span {
     color: #017143;
-    font-size: 70px;
+    font-size: 55px;
     font-weight: 900;
 }
 
 p {
-    font-size: 24px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -63,14 +66,14 @@ button {
     border-radius: 40px;
     border: none;
     cursor: pointer;
-    font-size: 24px;
-    width: 200px;
+    font-size: 18px;
+    width: 180px;
     height: 50px;
     margin-top: 20px;
 }
 
 .starbucks {
-    width: 340px;
+    width: 300px;
 }
 
 .btn-menu {
@@ -90,6 +93,66 @@ button {
     top: 0;
     left: 0;
     background: #017143;
-    clip-path: circle(600px at right 800px);
+    clip-path: circle(500px at right 700px);
     z-index: -1;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    span {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        width: 150px;
+        height: 40px;
+        display: block;
+        margin: 30px auto;
+    }
+
+    .img-container {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .starbucks {
+        width: 150px;
+        position: relative;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .menu-container {
+        margin-top: 35px;
+    }
 }
