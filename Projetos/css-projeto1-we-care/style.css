@@ -90,11 +90,11 @@ p {
 }
 
 @media screen and (max-width:900px) {
-    *{
-        margin:0;
-        padding:0;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    
+
     header {
         display: none;
     }
@@ -114,33 +114,33 @@ p {
 
     .box-right {
         width: 100vw;
-        height:40vh;
-        margin:0;
-    } 
+        height: 40vh;
+        margin: 0;
+    }
 
-    h1{
-        display:block;
-        width:263px;
-        height:52px;
+    h1 {
+        display: block;
+        width: 263px;
+        height: 52px;
         font-size: 50px;
         line-height: 61px;
         text-align: center;
-        margin:auto;
+        margin: auto;
 
     }
 
-    h2{
-        display:block;
-        width:232px;
-        height:37px;
+    h2 {
+        display: block;
+        width: 232px;
+        height: 37px;
         font-size: 30px;
         line-height: 37px;
         text-align: center;
-        margin:7px auto 17px;
+        margin: 7px auto 17px;
     }
 
-    button{
-        display:block;
-        margin:auto;
+    button {
+        display: block;
+        margin: auto;
     }
 }
