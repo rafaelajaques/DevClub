@@ -12,49 +12,54 @@ let ms = "00"
 let seg = "00"
 let min = "00"
 let hr = "00"
+let startClock = false;
+
 
 function start() {
-    startTimer = setInterval(function () {
-        ms++
+    if (!startClock) {
+        startTimer = setInterval(function () {
+            ms++
 
-        if (ms == 100) {
-            seg++
+            if (ms == 100) {
+                seg++
 
-            if (seg < 10) {
-                seg = "0" + seg
+                if (seg < 10) {
+                    seg = "0" + seg
+                }
+
+                ms = 0
             }
 
-            ms = 0
-        }
+            if (seg == 60) {
+                min++
 
-        if (seg == 60) {
-            min++
+                if (min < 10) {
+                    min = "0" + min
+                }
 
-            if (min < 10) {
-                min = "0" + min
+                seg = 0
             }
 
-            seg = 0
-        }
+            if (min == 60) {
+                hr++
 
-        if (min == 60) {
-            hr++
+                if (hr < 10) {
+                    hr = "0" + hr
+                }
 
-            if (hr < 10) {
-                hr = "0" + hr
+                min = 0
             }
 
-            min = 0
-        }
-
-        btnStart.classList.add('active')
-        btnPause.classList.remove('active')
-        valorAtualizado()
-    }, 10);
+            btnStart.classList.add('active')
+            btnPause.classList.remove('active')
+            valorAtualizado()
+        }, 10);
+    }
 }
 
 function stop() {
     clearInterval(startTimer)
+    startClock = false;
     btnPause.classList.add('active')
     btnStart.classList.remove('active')
 }
@@ -66,6 +71,7 @@ function reset() {
     seg = "00"
     min = "00"
     hr = "00"
+    startClock = false;
 
     btnStart.classList.remove('active')
     btnPause.classList.remove('active')

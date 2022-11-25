@@ -9,37 +9,54 @@ body {
     background: #000000;
     height: 100vh;
     width: 100vw;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid purple; */
 }
 
 .number-container {
     color: #FFFFFF;
-    font-size: 100px;
+    font-size: 4rem;
     font-weight: 600;
     color: #C5FB01;
     width: 100%;
-    margin-top: 250px;
-    padding-left: 450px;
+    padding: 0 13%;
+    margin-left: auto;
+    margin-right: auto;
     /* border: 1px solid red; */
 
 }
 
 .control-container {
-    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
     margin: 0 auto;
-    padding: 40px;
+    font-size: 3.5rem;
+    /* padding-top: 40px; */
     /* border: 1px solid cyan; */
 }
 
 button {
-    font-size: 30px;
-    padding: 15px;
-    width: 200px;
+    font-size: 24px;
+    padding: 2%;
+    width: 30%;
     border-radius: 4px;
     cursor: pointer;
     background: #FFFFFF;
     color: #C5FB01;
-
 }
 
 button:hover {
@@ -48,4 +65,59 @@ button:hover {
 
 .active {
     opacity: 0.5
+}
+
+@media (max-width: 1200px) {
+    .number-container {
+        font-size: 3.4rem;
+        padding: 0 10%;
+
+    }
+
+    .control-container {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 60%;
+    }
+
+    .number-container {
+        font-size: 3rem;
+        padding: 0 12%;
+    }
+
+    .control-container {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .number-container {
+        font-size: 2.5rem;
+    }
+
+    .control-container {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 80%;
+    }
+
+    .number-container {
+        font-size: 2rem;
+    }
+
+    .control-container {
+        font-size: 1.8rem;
+    }
 }
