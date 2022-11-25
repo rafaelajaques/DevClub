@@ -83,10 +83,10 @@ p {
         padding: 0;
     }
 
-    main{
-        position:static;
+    main {
+        position: static;
         width: 100vw;
-   }
+    }
 
     img {
         display: block;
@@ -105,8 +105,7 @@ p {
     }
 
     header {
-        display:block:
-        width: 100%;
+        display: block: width: 100%;
     }
 
     button {
@@ -120,7 +119,7 @@ p {
         letter-spacing: 1px;
     }
 
-   
+
 
     section {
         display: block;
@@ -129,9 +128,9 @@ p {
         text-align: center;
     }
 
-    h1{
-        display:block;
-        margin:auto;
+    h1 {
+        display: block;
+        margin: auto;
         width: 278px;
         height: 60px;
         font-size: 30px;
@@ -140,8 +139,8 @@ p {
         letter-spacing: 0.596154px;
     }
 
-    p{
-        display:block;
+    p {
+        display: block;
         margin: 29px auto 26px;
         width: 304px;
         height: 165px;
@@ -150,6 +149,7 @@ p {
         text-align: center;
         letter-spacing: 0.5px;
     }
+
     .explore-link {
         display: block;
         margin: auto;
