@@ -34,21 +34,25 @@ nav {
 select {
     background: transparent;
     color: #FFFFFF;
-    font-size: 19px;
-    height: 45px;
-    width: 150px;
-    border: 2px solid #FFFFFF;
-    border-radius: 5px;
+    font-size: 14px;
+    height: 35px;
+    width: 100px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
     outline: none;
+}
+
+option {
+    background: grey;
 }
 
 .enter {
     background: #E50914;
-    border: 2px solid #E50914;
+    border: 1px solid #E50914;
     border-radius: 5px;
-    width: 100px;
+    width: 80px;
     color: #FFFFFF;
-    font-size: 19px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -62,27 +66,27 @@ select {
 
 main {
     width: 100%;
-    height: 800px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     /* border: 1px solid cyan; */
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
 .first {
-    font-size: 25px;
+    font-size: 19px;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -93,28 +97,29 @@ h2 {
     justify-content: center;
     /* border: 1px solid orangered; */
     width: 100%;
+    margin-bottom: 50px;
 }
 
 input {
-    width: 600px;
-    height: 70px;
-    padding: 20px;
-    font-size: 20px;
+    width: 450px;
+    height: 60px;
+    padding: 15px;
+    font-size: 16px;
     outline: none;
     border-radius: 3px;
 }
 
 .go {
     background: #E50914;
-    border: 2px solid #E50914;
-    border-radius: 3px;
-    font-size: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 24px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0 15px 0 25px;
-    height: 70px;
+    height: 60px;
 }
 
 .go:hover {
@@ -129,10 +134,136 @@ section {
     background: #000000;
     border-top: 8px solid #303030;
     padding: 100px 0;
+}
+
+.options {
+    /* position: relative; */
+    display: flex;
+    height: 480px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.container-options {
+    width: 560px;
+    margin: 50px;
+    /* border: 1px solid yellow; */
+}
+
+.title-options {
+    font-size: 50px;
+    margin: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.text-options {
+    font-size: 24px;
+    margin: 30px;
+    text-align: left;
+}
+
+.tv-container {
+    position: relative;
+    width: 550px;
+    height: 480px;
+    margin-right: 75px;
+    /* border: 1px solid cyan; */
+}
+
+.tv-img {
+    width: 100%;
+    /* border: 1px solid darkblue; */
+}
+
+.first-video {
+    width: 392px;
+    height: 222px;
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    /* border: 1px solid green; */
+}
+
+.video1 {
+    width: 390px;
+}
+
+.mobile-options {
+    position: relative;
+}
+
+.mobile-text {
+    margin-right: 80px;
+}
+
+.mobile-img {
+    width: 40%;
+}
+
+.mobile-img-container {
+    position: absolute;
+    left: 100px;
+    top: 310px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #000000;
+    border: 2px solid #303030;
+    border-radius: 10px;
+    width: 330px;
+    padding: 10px;
+}
+
+.mobile-folder {
+    width: 50px;
+}
+
+.title-mobile {
+    font-weight: bold;
 
 }
 
-.rod-question {
+.text-mobile {
+    color: #0054E4;
+    font-weight: 400;
+}
+
+.device-container {
+    position: relative;
+    width: 550px;
+    height: 480px;
+    margin-right: 75px;
+    padding-top: 50px;
+    /* border: 1px solid cyan; */
+}
+
+.device-img {
+    width: 100%;
+    /* border: 1px solid darkblue; */
+}
+
+.seccond-video {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 94px;
+    right: 98px;
+    /* border: 1px solid green; */
+}
+
+.video2 {
+    width: 340px;
+}
+
+.kids-img {
+    height: 130%;
+    margin-left: 120px;
+}
+
+.faq-lista {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,35 +271,36 @@ section {
 }
 
 #title-question {
-    font-size: 60px;
+    font-size: 48px;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.btn-question {
+.faq-lista dt {
     width: 800px;
     height: 70px;
     background: #303030;
     border: 0;
-    font-size: 30px;
+    font-size: 24px;
     text-align: left;
     padding: 0 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 8px;
 }
 
 .btn-img {
     width: 20px;
 }
 
-.question {
-    margin-top: 2px;
+.faq-lista dd {
     width: 800px;
     background: #303030;
     border: 0;
-    font-size: 30px;
+    font-size: 24px;
     padding: 50px 30px;
     margin-bottom: 8px;
 }
@@ -177,45 +309,38 @@ section {
     margin-top: 60px;
 }
 
-.options {
-    padding: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.js-accordion dd {
+    display: none;
 }
 
-.container-options {
-    width: 800px;
+.js-accordion dt::after {
+    content: "+";
+    margin-left: 10px;
 }
 
-.title-options {
-    font-size: 62px;
-    margin: 30px;
-    text-align: left;
-
+.js-accordion dt.ativo::after {
+    content: "x";
 }
 
-.text-options {
-    font-size: 35px;
-    margin: 30px;
-    text-align: left;
+.js-accordion dd.ativo {
+    display: block;
+    animation: slideDown 0.5s forwards;
 }
 
 footer {
     background: #000000;
-    padding: 100px 250px;
+    padding: 80px 200px;
     border-top: 8px solid #303030;
 
 }
 
 .phone {
-    font-size: 20px;
+    font-size: 16px;
     color: #949393;
 }
 
 .rodape {
-    margin: 50px 0 50px;
+    margin: 30px 0;
     display: grid;
     grid-template-rows: 40px 40px 40px 40px 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -223,9 +348,11 @@ footer {
 
 a {
     color: #949393;
+    font-size: 13px;
     text-decoration: none;
     position: relative;
 }
+
 /* 
 .foot:after {
     content: "";
@@ -243,8 +370,9 @@ a {
 
 
 .end {
-    height: 60px;
-    font-size: 24px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
     color: #949393;
     border: 1px solid #949393;
     border-radius: 2px;
@@ -253,4 +381,5 @@ a {
 .last {
     color: #949393;
     margin-top: 30px;
+    font-size: 13px;
 }
