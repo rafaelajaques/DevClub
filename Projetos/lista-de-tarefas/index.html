@@ -15,30 +15,17 @@
 
 <body>
     <div class="container">
-        <input type="text" placeholder="O que preciso fazer?">
-        <button class="add"> Adicionar</button>
-
-        <ul id="tarefas">
-            <li class="item-tarefa">
-                <button class="btn-foguete">
-                    <i class="fa-solid fa-rocket"></i>
-                </button>
-                <p class="nome-tarefa">Estudar programação</p>
-                <button class="btn-delete">
-                    <i class="fa-solid fa-trash"></i>
-                </button>
-            </li>
-            <li class="item-tarefa">
-                <button class="btn-foguete">
-                    <i class="fa-solid fa-rocket"></i>
-                </button>
-                <p class="nome-tarefa">Estudar inglês</p>
-                <button class="btn-delete">
-                    <i class="fa-solid fa-trash"></i>
-                </button>
-            </li>
-        </ul>
+       
+        <header>
+            <input id="inputTarefa" type="text" placeholder="O que preciso fazer?">
+            <button id="btn-add" class="add" onclick="addTarefa()">Adicionar</button>
+        </header>
+        <main id="areaLista">
+    
+    
+        </main>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
