@@ -3,7 +3,7 @@ function initAccordion() {
     const activeClass = "ativo"
 
     if (accordionList.length) {
-        accordionList[0].classList.add(activeClass)
+        // accordionList[0].classList.add(activeClass)
         // accordionList[0].nextElementSibling.classList.add(activeClass)
 
         function activeAccordion() {

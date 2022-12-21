@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/522d5e1aa3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title> Netflix Brasil - assistir a séries online, assistir a filmes online</title>
 </head>
@@ -15,25 +16,29 @@
         <header>
             <img src="./img/logo3.png" alt="logo-Netflix">
             <nav>
-                <select>
-                    <option>
-                        Português
-                    </option>
-                    <option>
-                        English
-                    </option>
-                </select>
+                <div class="globe">
+                    <i class="fa-solid fa-globe"></i>
+                    <select>
+                        <option>
+                            Português
+                        </option>
+                        <option>
+                            English
+                        </option>
+                    </select>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
                 <button class="enter"> Entrar </button>
             </nav>
         </header>
         <main>
-            <h1>Filmes, séries e muito mais.<br> Sem limites.</h1>
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
             <h2>Assista onde quiser. Cancele quando quiser.</h2>
-            <p class="first">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <p class="first">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
             <div class="container">
                 <input type="text" placeholder="Email">
                 <button class="go"> Vamos lá
-                    <img id="seta" src="./img/arrow-forward.png" style="width: 36px" alt="seta">
+                    <img id="seta" src="./img/arrow-forward.png" style="width: 20%" alt="seta">
                 </button>
             </div>
         </main>
@@ -51,17 +56,17 @@
             </div>
         </div>
     </section>
-    <section class="options mobile-options">
+    <section class="options mobile-options options-order">
         <img class="mobile-img" src="./img/mobile-0819.jpg" alt="mobile">
-        <div class="mobile-img-container">
+        <div class="mobile-img-container mobile-order">
             <img class="mobile-folder" src="./img/boxshot.png" alt="capa de stranger things">
             <p class="title-mobile">Stranger Things<br>
                 <span class="text-mobile">Download em andamento...</span>
             </p>
-
+            <img class="gif-mobile" src="./img/download-icon.gif" alt="gif de download em andamento">
         </div>
 
-        <div class="container-options mobile-text">
+        <div class="container-options mobile-text container-order">
             <p class="title-options">Baixe séries para <br>assistir offline.</p>
             <p class="text-options">Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
         </div>
@@ -78,9 +83,9 @@
             </div>
         </div>
     </section>
-    <section class="options">
+    <section class="options options-order">
         <img class="kids-img" src="./img/infantil.png" alt="kids">
-        <div class="container-options">
+        <div class="container-options container-order">
             <p class="title-options">Crie perfis para <br>crianças.</p>
             <p class="text-options">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito
                 só para elas, sem pagar a mais por isso.</p>
@@ -140,42 +145,46 @@
                 </dd>
             </dl>
         </div>
-        <p class="first already">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-        <div class="container">
+        <p class="first already">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <div class="container container-end">
             <input type="text" placeholder="E-mail">
-            <button class="go"> Vamos lá
-                <img id="seta" src="./img/arrow-forward.png" style="width: 36px" alt="seta">
+            <button class="go go-end"> Vamos lá
+                <img id="seta" src="./img/arrow-forward.png" style="width: 25%" alt="seta">
             </button>
     </section>
     <footer>
         <p class="phone">Dúvidas? Ligue 0800 591 8942</p>
         <div class="rodape">
             <a href="#" class="foot">Perguntas frequentes</a>
-            <a href="#" class="foot">Central de Ajuda</p>
-                <a href="#" class="foot">Conta</a>
-                <a href="#" class="foot">Media Center</a>
-                <a href="#" class="foot">Relações com investidores</a>
-                <a href="#" class="foot">Carreiras</a>
-                <a href="#" class="foot">Resgatar cartão pré-pago</a> <a href="#" class="foot">Comprar cartão
-                    pré-pago</a>
-                <a href="#" class="foot">Formas de assistir</a>
-                <a href="#" class="foot">Termos de Uso</a>
-                <a href="#" class="foot">Privacidade</a>
-                <a href="#" class="foot">Preferências de cookies</a>
-                <a href="#" class="foot">Informações corporativas</a>
-                <a href="#" class="foot">Entre em contato</a>
-                <a href="#" class="foot">Teste de velocidade</a>
-                <a href="#" class="foot">Avisos legais</a>
-                <a href="#" class="foot">Só na Netflix</a>
+            <a href="#" class="foot">Central de Ajuda</a>
+            <a href="#" class="foot">Conta</a>
+            <a href="#" class="foot">Media Center</a>
+            <a href="#" class="foot">Relações com investidores</a>
+            <a href="#" class="foot">Carreiras</a>
+            <a href="#" class="foot">Resgatar cartão pré-pago</a>
+            <a href="#" class="foot">Comprar cartão pré-pago</a>
+            <a href="#" class="foot">Formas de assistir</a>
+            <a href="#" class="foot">Termos de Uso</a>
+            <a href="#" class="foot">Privacidade</a>
+            <a href="#" class="foot">Preferências de cookies</a>
+            <a href="#" class="foot">Informações corporativas</a>
+            <a href="#" class="foot">Entre em contato</a>
+            <a href="#" class="foot">Teste de velocidade</a>
+            <a href="#" class="foot">Avisos legais</a>
+            <a href="#" class="foot">Só na Netflix</a>
         </div>
-        <select class="end">
-            <option>
-                Português
-            </option>
-            <option>
-                English
-            </option>
-        </select>
+        <div class="end">
+            <i class="fa-solid fa-globe icon"></i>
+            <select class="select-end">
+                <option class="option-end">
+                    Português
+                </option>
+                <option class="option-end">
+                    English
+                </option>
+            </select>
+            <i class="fa-solid fa-caret-down icon"></i>
+        </div>
         <p class="last">Netflix Brasil</p>
     </footer>
     <script src="./script.js"></script>
