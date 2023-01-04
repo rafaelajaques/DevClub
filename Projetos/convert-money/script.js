@@ -3,7 +3,7 @@ const select = document.getElementById('currency-select')
 
 async function convertValues() {
 
-    let coins = await fetch("http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(function (answer) {
+    let coins = await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL").then(function (answer) {
         return answer.json()
         console.log(coins)
     })
