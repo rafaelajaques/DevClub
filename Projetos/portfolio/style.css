@@ -23,7 +23,6 @@ nav {
 
 .menu-icon {
     width: 25px;
-    margin-right: 20px;
     background: #ffffff;
     border-radius: 50%;
     display: none;
@@ -252,7 +251,7 @@ footer a:hover {
         display: block;
         position: relative;
         top: 0px;
-        /* right: 400px; */
+        right: 0px;
     }
 
     .portfolio {
