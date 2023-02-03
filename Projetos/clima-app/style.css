@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.container {
+    width: 90%;
+    height: 300px;
+    max-width: 420px;
+    background: #000000;
+    border-radius: 25px;
+    opacity: 0.8;
+    color: #ffffff;
+    padding: 20px;
+}
+
+input {
+
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    background: rgba(124, 124, 124, 0.169);
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.search {
+    width: 20px;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+.temp-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+    ;
+}
+
+.temp {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.description-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.description {
+    text-transform: capitalize;
+    font-size: 20px;
+    /* margin-left: 20px; */
+}
+
+.amplitude,
+.other-info {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.humidity,
+.feels-like {
+    margin-top: 10px;
+}
+
+@media (max-width:576px) {
+    body {
+        background-image: url("https://source.unsplash.com/1440x2560/?landscape");
+    }
+
+    .amplitude,
+    .other-info {
+        gap: 15px;
+
+    }
+}
