@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "./style/theme"
-import { Screen } from "./style"
+import { Flex, Screen, Typography } from "./style"
 
 function App() {
  
@@ -9,7 +9,10 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Screen>
-        <h1> Hello World</h1>
+        <Flex>
+        <Typography> Hello World</Typography>
+        <Typography> Hello World</Typography>
+        </Flex>
       </Screen>
     </ThemeProvider>
   
