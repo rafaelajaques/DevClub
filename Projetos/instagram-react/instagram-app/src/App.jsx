@@ -6,6 +6,7 @@ import { darkTheme, lightTheme } from "./style/theme";
 import { Flex, Screen } from "./style";
 import { NavBar } from "./components/navbar";
 import { Header } from "./components/header";
+import { Stories } from "./components/stories";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -21,6 +22,7 @@ function App() {
 
         <Flex gap="2px">
           <Header />
+          <Stories />
         </Flex>
       </Screen>
     </ThemeProvider>
