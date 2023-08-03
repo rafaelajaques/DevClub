@@ -4,7 +4,7 @@ export const lightTheme = {
   primary: "#ffff",
   secondary: "#000000",
   tertiary: "#fefefe",
-  divisor: "#f3f3f3",
+  divider: "#f3f3f3",
   boxShadow: "rgba(233,233,233,0.25)",
 };
 
@@ -14,6 +14,6 @@ export const darkTheme = {
   primary: "#242424",
   secondary: "#292929",
   tertiary: "#222222",
-  divisor: "#545252",
+  divider: "#545252",
   boxShadow: "rgba(22,22,22,0.25)",
 };

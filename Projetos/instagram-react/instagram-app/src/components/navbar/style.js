@@ -29,3 +29,47 @@ export const BtnTheme = styled.button`
     opacity: 0.8;
   }
 `;
+
+export const Profile = styled.div`
+  position: relative;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    #f09435 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 70%,
+    #bc1888 100%
+  );
+
+  img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+  }
+`;
+
+export const ListIcon = styled.li`
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: ${(props) => props.theme.textPrimary};
+  font-size: 24px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+export const Divider = styled.div`
+  width: 100%;
+  height: 1px;
+  border: ${(props) => `1px solid ${props.theme.divider}`};
+`;
