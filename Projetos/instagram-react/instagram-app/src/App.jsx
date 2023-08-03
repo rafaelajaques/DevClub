@@ -7,6 +7,7 @@ import { Flex, Screen } from "./style";
 import { NavBar } from "./components/navbar";
 import { Header } from "./components/header";
 import { Stories } from "./components/stories";
+import { Publications } from "./components/publications";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -23,6 +24,7 @@ function App() {
         <Flex gap="2px">
           <Header />
           <Stories />
+          <Publications />
         </Flex>
       </Screen>
     </ThemeProvider>
