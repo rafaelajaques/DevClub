@@ -42,8 +42,8 @@ function App() {
 
         <Flex gap="2px">
           <Header />
-          <Stories />
-          <Publications />
+          <Stories photos={photos} />
+          <Publications photos={photos} />
         </Flex>
       </Screen>
     </ThemeProvider>

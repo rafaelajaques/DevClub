@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Button, Flex, Typography } from "../../style";
 import * as C from "./style";
+import PropTypes from "prop-types";
 
-export function Stories() {
+export function Stories({ photos }) {
   const [showAll, setShowAll] = useState(false);
 
-  const numberArray = showAll ? 20 : 8;
+  photos = showAll ? photos : photos?.slice(0, 10);
 
   function handleShowAll() {
     setShowAll(!showAll);
@@ -24,12 +25,9 @@ export function Stories() {
         </Button>
 
         <C.Container>
-          {Array.from(Array(numberArray)).map((item, index) => (
-            <C.Profile key={index}>
-              <img
-                src="https://avatars.githubusercontent.com/u/111152921?v=4"
-                alt="Imagem de perfil"
-              />
+          {photos.map((photo) => (
+            <C.Profile key={photo?.id}>
+              <img src={photo?.src?.medium} alt="Fotografia" />
             </C.Profile>
           ))}
         </C.Container>
@@ -37,3 +35,7 @@ export function Stories() {
     </Flex>
   );
 }
+
+Stories.propTypes = {
+  photos: PropTypes.array,
+};

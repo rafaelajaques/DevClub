@@ -2,24 +2,30 @@
 import { Typography } from "../../style";
 import { InfoProfile } from "../infoProfile";
 import * as C from "./style";
+import PropTypes from "prop-types";
 
-export function Publications() {
+export function Publications({ photos }) {
   return (
     <C.Container>
       <Typography>Publicações</Typography>
 
       <C.ContainerPublications>
-        {Array.from(Array(20)).map((item, index) => (
+        {photos.map((photo) => (
           // eslint-disable-next-line react/jsx-key
-          <C.Content>
-            <C.PublicationImage
-              src="https://avatars.githubusercontent.com/u/111152921?v=4"
-              alt="Imagem de perfil"
+          <C.Content key={photo?.id}>
+            <C.PublicationImage src={photo?.src?.medium} alt="fotografia" />
+            <InfoProfile
+              name={photo?.photographer}
+              photo={photo?.src?.small}
+              link={photo?.photographer_url}
             />
-            <InfoProfile />
           </C.Content>
         ))}
       </C.ContainerPublications>
     </C.Container>
   );
 }
+
+Publications.propTypes = {
+  photos: PropTypes.array,
+};

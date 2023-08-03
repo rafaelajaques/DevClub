@@ -2,18 +2,17 @@ import { Flex, Typography } from "../../style";
 import { AiFillHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import * as C from "./style";
+import PropTypes from "prop-types";
+import { randomNumbers } from "../../utils/randomNumbers";
 
-export function InfoProfile() {
+export function InfoProfile({ name, photo, link }) {
   return (
     <Flex direction="row" align="center" justify="space-between">
       <C.Container>
-        <C.Link>
-          <C.ProfileImage
-            src="https://avatars.githubusercontent.com/u/111152921?v=4"
-            alt="Imagem de perfil"
-          />
+        <C.Link href={link} target="_blank">
+          <C.ProfileImage src={photo} alt="Fotografia" />
           <Typography weight="300" size="13px" height="15px">
-            Rafaela
+            {name}
           </Typography>
         </C.Link>
       </C.Container>
@@ -21,14 +20,20 @@ export function InfoProfile() {
       <C.Container>
         <AiFillHeart color="red" />
         <Typography weight="300" size="13px" height="15px">
-          1234
+          {randomNumbers()}
         </Typography>
 
         <FaRegComment />
         <Typography weight="300" size="13px" height="15px">
-          10
+          {randomNumbers()}
         </Typography>
       </C.Container>
     </Flex>
   );
 }
+
+InfoProfile.propTypes = {
+  name: PropTypes.string,
+  photo: PropTypes.string,
+  link: PropTypes.string,
+};
