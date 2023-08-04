@@ -13,7 +13,7 @@ export const ContainerPublications = styled.div`
   width: 100%;
   flex-wrap: wrap;
   gap: 12px;
-  height: 320px;
+  height: 300px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: 4px;
@@ -31,7 +31,7 @@ export const ContainerPublications = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  width: 240px;
+  width: 200px;
   gap: 20px;
   flex-direction: column;
 `;
