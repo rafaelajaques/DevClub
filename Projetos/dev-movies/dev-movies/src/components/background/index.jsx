@@ -1,11 +1,13 @@
 /* eslint-disable no-unused-vars */
-import { BackgroundImage } from "./style";
+import { BackgroundImage, BackgroundGradient } from "./style";
 import PropTypes from "prop-types";
 import backgroundImage from "../../assets/background.svg";
 
 export const Background = ({ children }) => {
   return (
-    <BackgroundImage bgimage={backgroundImage}>{children}</BackgroundImage>
+    <BackgroundImage bgimage={backgroundImage}>
+      <BackgroundGradient>{children}</BackgroundGradient>
+    </BackgroundImage>
   );
 };
 
