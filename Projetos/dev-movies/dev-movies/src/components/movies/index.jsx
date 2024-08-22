@@ -1,9 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Image from "../../assets/image.svg";
 import * as C from "./style";
+import PropTypes from "prop-types";
 
-export const Movies = () => {
+export const Movies = ({ data }) => {
+  console.log(data);
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -19,43 +20,26 @@ export const Movies = () => {
     },
   };
 
+  const getMovies = (category) => {
+    return data?.movies?.filter((movie) => movie?.category === category);
+  };
+
   return (
     <C.Container>
-      <C.Text>Movies</C.Text>
-      <Carousel responsive={responsive}>
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-      </Carousel>
-
-      <C.Text>TV Show</C.Text>
-      <Carousel responsive={responsive}>
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-      </Carousel>
-
-      <C.Text>All</C.Text>
-      <Carousel responsive={responsive}>
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-        <C.Movie src={Image} alt="imagem do filme" />
-      </Carousel>
+      {data?.categories?.map(category)(
+        <>
+          <C.Text>{category?.name}</C.Text>
+          <Carousel responsive={responsive}>
+            {getMovies(category?.type).map((data, index) => (
+              <C.Movie src={data?.imageSmall} alt={data?.title} key={index} />
+            ))}
+          </Carousel>
+        </>
+      )}
     </C.Container>
   );
+};
+
+Movies.propTypes = {
+  data: PropTypes.object,
 };
