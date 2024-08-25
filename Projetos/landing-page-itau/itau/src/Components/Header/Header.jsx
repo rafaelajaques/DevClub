@@ -1,9 +1,9 @@
 import React from "react";
 import * as S from "./styles";
 
-import ItemMenu from "./ItemMenu";
-import LogoItau from "../assets/logo.svg";
-import IconUser from "../assets/icon-user.svg";
+import ItemMenu from "../Header/ItemMenu";
+import LogoItau from "../../assets/logo.svg";
+import IconUser from "../../assets/icon-user.svg";
 
 export default function Header() {
   return (
@@ -15,18 +15,18 @@ export default function Header() {
           </div>
 
           <S.Ul>
-            <li>
+            <S.Li>
               <ItemMenu name="Para você" />
-            </li>
-            <li>
+            </S.Li>
+            <S.Li>
               <ItemMenu name="Para empresas" />
-            </li>
-            <li>
+            </S.Li>
+            <S.Li>
               <ItemMenu name="Serviços" />
-            </li>
-            <li>
+            </S.Li>
+            <S.Li>
               <ItemMenu name="Ajuda" />
-            </li>
+            </S.Li>
           </S.Ul>
 
           <S.DivButtonAccess>
